@@ -12,4 +12,9 @@
 
 -(NSNumber *) largestNumber: (NSArray *)numberArray;
 
+-(NSNumber *) smallestNumber: (NSArray *)numberArray;
+
+-(NSNumber *) medianNumber: (NSArray *)numberArray;
+
+
 @end
