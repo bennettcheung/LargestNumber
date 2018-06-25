@@ -8,10 +8,24 @@
 
 #import <Foundation/Foundation.h>
 
+static NSNumber *findLargestNumber(NSArray *numberArray) {
+    NSNumber *largestNum = 0;
+    
+    for (NSNumber *num in numberArray) {
+        if (num > largestNum)
+            largestNum = num;
+    }
+    
+    return (largestNum);
+}
+
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
-        // insert code here...
-        NSLog(@"Hello, World!");
+        
+        NSArray *numberArray = @[@3,@15,@1,@9];
+        
+        
+        NSLog(@"The largest number is %@", findLargestNumber(numberArray));
     }
     return 0;
 }
